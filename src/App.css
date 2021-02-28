@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* font-family: "Poppins", sans-serif; */
+	font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+}
+.mother {
+	padding: 0 3rem;
+		/* border: 1px solid tomato; */
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* banner styles */
+
+.banner-wrapper {
+	background-color: #e6e6e6;
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* color:red; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banner a {
+	text-decoration: none;
+	color: black;
+}
+.banner p {
+	font-size: 14px;
+}
+.banner h2 {
+	letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.secondBanner-wrapper {
+	height: 20vh;
+	background: white;
+	display: flex;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.secondBanner-wrapper span {
+	font-size: 24px;
+	color: rgb(18, 18, 37);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 800px) {
+	.banner {
+		width: 90%;
+		text-align: center;
+	}
 }
